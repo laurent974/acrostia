@@ -16,7 +16,6 @@
  		.row();
  		.clearfix();
 
-
  		/* ========================================================== */
  		/* = Carousel content                                       = */
  		/* ========================================================== */
@@ -71,13 +70,21 @@
 
  		.owl-buttons {
  			position: absolute;
- 			top: 50%;
+ 			top: 17%;
  			width: 100%;
+ 			> div {
+ 				width: 35px;
+ 				height: 56px;
+ 				filter: Alpha(Opacity=50);/*IE7 fix*/
+ 				opacity: 0.5;
+ 			}
  			.owl-prev {
  				float: left;
+ 				background-image: url("../img/arrow_left.svg");
  			}
  			.owl-next {
  				float: right;
+ 				background-image: url("../img/arrow_right.svg");
  			}
  		}
  	}
