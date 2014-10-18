@@ -1,21 +1,54 @@
 - pageTitle= "Welcome on Acrostia!"
 doctype html
 html(lang="fr")
-  head
-    title= pageTitle
-    link(rel="stylesheet", href="assets/css/main.css")
-    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900")
-    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Damion")
-  body
-    h1 Jade - node template engine
-    #container.col
-      if youAreUsingJade
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Jade is a terse and simple
-        templating language with a
-        strong focus on performance
-        and powerful features.testdaz 
-        lolololololooooooooooooo modification supplémentaire
+	head
+		title= pageTitle
+		meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+		meta(name="description", content="Acrostia free template")
+		meta(name="keywords", content="Acrostia, responsive")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+		// if lt IE 9
+			script(type="text/javascript", src="assets/vendor/html5shiv-min.js")
+
+		link(rel="stylesheet", href="assets/css/main.css")
+		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900")
+		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Damion")
+
+		//Carousel
+		link(rel="stylesheet", href="assets/css/owl.carousel.css")
+		link(rel="stylesheet", href="assets/css/owl.theme.css")
+	body
+		#home
+			.bg
+			.global
+				header
+					h1 acrostia
+					nav
+						ul
+							li.active: a(href="#home") Home
+							li: a(href="#") Services
+							li: a(href="#about") About
+							li: a(href="#work") Work
+							li: a(href="#contacts") Contacts
+				section
+					#carousel.owl-carousel
+						.slide-one
+							p.ideas
+								span.good-ideas Good ideas
+								span.comes comes
+							p.first first!
+						.slide-two
+							p.ideas
+								span.good-ideas Good ideas
+								span.comes comes
+							p.first first!
+						.slide-three
+							p.ideas
+								span.good-ideas Good ideas
+								span.comes comes
+							p.first first!
+
+
+		script(src="assets/vendor/jquery-1.11.1.min.js")
+		script(src="assets/vendor/owl.carousel.min.js")
+		script(src="assets/js/main.js")

@@ -1,5 +1,50 @@
-.css {
-	.test {
-		color: #fff;
+ /* ========================================================== */
+ /* = Header                                                 = */
+ /* ========================================================== */
+header {
+	.border-box();
+	.row();
+	.clearfix();
+
+	margin-bottom: 300px;
+
+	 /* ========================================================== */
+	 /* = logo acrostia                                          = */
+	 /* ========================================================== */
+	h1 {
+		display: inline-block;
+		font-family: @logo_family;
+		font-weight: 400;
+		font-size: 3.13em;
+		line-height: 1.2;
+		padding: 0;
+	}
+
+	 /* ========================================================== */
+	 /* = Navigation                                             = */
+	 /* ========================================================== */
+	nav {
+		font-size: 1.10em;
+		font-weight: 400;
+		float: right;
+		.clearfix();
+		ul {
+			list-style-type: none;
+			margin-bottom: 0;
+			li {
+				display: inline-block;
+				padding: 41px 28px 15px;
+				line-height: 1;
+				.border-radiuses(0,5px,5px,0);
+
+				&.active {
+					background-color: @bgLightBlue;
+				}
+
+				a {
+					text-decoration: none;
+				}
+			}
+		}
 	}
 }

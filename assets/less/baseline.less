@@ -9,27 +9,35 @@
  * @version 1.1
  */
 
-/* ========================================================== */
-/* = Box sizing makes life easier                           = */
-/* ========================================================== */
+ /* ========================================================== */
+ /* = Box sizing makes life easier                           = */
+ /* ========================================================== */
 
-*{ 
-   -webkit-box-sizing: border-box; 
-   -moz-box-sizing: border-box; 
-   box-sizing: border-box;
-}
+ *{ 
+     -webkit-box-sizing: border-box; 
+     -moz-box-sizing: border-box; 
+     box-sizing: border-box;
+ }
 
-/* ========================================================== */
-/* = Set up baseline                                        = */
-/* ========================================================== */
+ /* ========================================================== */
+ /* = Set up baseline                                        = */
+ /* ========================================================== */
 
-html{ font-size: 100.01%; }
+ html{ font-size: 100.01%; }
 
-body{
-	font-size: @baseline;
-	color: @body_color;
-	line-height: 1.5em;
-	font-family: @body_family;
+ body{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    font-size: @baseline;
+    color: @txtWhite;
+    background-color: @bgRegularGrey;
+    line-height: 1.5em;
+    font-family: @body_family;
 
 	// Optional type aliasing
 	text-shadow: 0 -1px 1px rgba(255, 255, 255, 0.01);
@@ -67,8 +75,8 @@ a{
 	color:@txtWhite;
 
 	&:hover, &:focus{
-	    color: @txtLightBlue;
-	}
+       color: @txtLightBlue;
+   }
 
 	// Optional transition
 	-webkit-transition:all .2s linear;
@@ -85,7 +93,7 @@ a{
 h1,h2,h3,h4,h5,h6{
 	margin-top:0;
     font-family: @heading_family;
-    color: @heading_color;
+    color: @txtWhite;
 }
 
 h1{
@@ -286,8 +294,8 @@ tbody{
 tfoot{
     font-style: italic;
     td, th{
-	    padding: .75em 10px;
-	}
+       padding: .75em 10px;
+   }
 }
 
 th,td,caption{
