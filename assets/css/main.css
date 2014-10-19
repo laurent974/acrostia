@@ -661,6 +661,12 @@ h1 {
   font-weight: 100;
   text-align: center;
 }
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.88em;
+  line-height: 2;
+}
 /* ========================================================== */
 /* = blocs                                                  = */
 /* ========================================================== */
@@ -706,6 +712,19 @@ h1 {
 p.subtitle,
 p.short-desc {
   text-align: center;
+  font-weight: 400;
+}
+p.subtitle {
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+p.subtitle span.special {
+  color: #ec9da2;
+}
+p.short-desc {
+  font-size: .8em;
+  color: #ffccd0;
+  margin-bottom: 10em;
 }
 /* ========================================================== */
 /* = Header                                                 = */
@@ -719,7 +738,7 @@ header {
   margin: 0 auto;
   padding: 0 0;
   *zoom: 1;
-  margin-bottom: 300px;
+  margin-bottom: 80px;
   /* ========================================================== */
   /* = logo acrostia                                          = */
   /* ========================================================== */
@@ -789,9 +808,6 @@ header nav ul li {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-header nav ul li.active {
-  background-color: #74c7d5;
-}
 header nav ul li a {
   text-decoration: none;
 }
@@ -808,6 +824,9 @@ header nav ul li a {
 }
 #home .bg {
   background: url("../img/bg_index.png") no-repeat center 0px;
+}
+#home header nav ul li.active {
+  background-color: #74c7d5;
 }
 #home .slide-one,
 #home .slide-two,
@@ -888,6 +907,9 @@ header nav ul li a {
 #home .slide-three {
   color: #e6d1e3;
 }
+#home #carousel {
+  margin-top: 400px;
+}
 #home .owl-buttons {
   position: absolute;
   top: 17%;
@@ -920,6 +942,9 @@ header nav ul li a {
 /* ========================================================== */
 #services .bg {
   background: url("../img/bg_services.png");
+}
+#services header nav ul li.active {
+  background-color: #df5c64;
 }
 #services article.bloc {
   -webkit-box-sizing: border-box;

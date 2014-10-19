@@ -7,9 +7,15 @@ h1 {
 	font-weight: 100;
 	text-align: center;
 }
+h2 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.88em;
+	line-height: 2;
+}
 
 
-/* ========================================================== */
+ /* ========================================================== */
  /* = blocs                                                  = */
  /* ========================================================== */
 .section {
@@ -32,4 +38,17 @@ h1 {
 }
 p.subtitle, p.short-desc {
 	text-align: center;
+	font-weight: 400;
+}
+p.subtitle {
+	text-transform: uppercase;
+	font-size: 1.25em;
+	span.special {
+		color: @txtRegularPink;
+	}
+}
+p.short-desc {
+	font-size: .8em;
+	color: @txtLightPink;
+	margin-bottom: 10em;
 }
