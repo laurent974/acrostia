@@ -1,0 +1,27 @@
+mixin header(activePage)
+	header
+		a.logo acrostia
+		nav
+			ul
+				li(class=(activePage === 'home' ? 'active' : '')): a(href="#home") Home
+				li(class=(activePage === 'services' ? 'active' : '')): a(href="#services") Services
+				li(class=(activePage === 'about' ? 'active' : '')): a(href="#about") About
+				li(class=(activePage === 'work' ? 'active' : '')): a(href="#work") Work
+				li(class=(activePage === 'contacts' ? 'active' : '')): a(href="#contacts") Contacts
+	section
+		#carousel.owl-carousel
+			.slide-one
+				p.ideas
+					span.good-ideas Good ideas
+					span.comes comes
+				p.first first!
+			.slide-two
+				p.ideas
+					span.good-ideas Good ideas
+					span.comes comes
+				p.first first!
+			.slide-three
+				p.ideas
+					span.good-ideas Good ideas
+					span.comes comes
+				p.first first!
