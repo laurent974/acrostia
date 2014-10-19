@@ -2,8 +2,72 @@
  /* = About module                                           = */
  /* ========================================================== */
 
-#about {
-	.bg {
-		background: url("../img/bg_about.png");
+ #about {
+ 	.bg {
+ 		background: url("../img/bg_about.png");
+ 	}
+ 	header nav ul li.active {
+		background-color: @bgDarkPink;
 	}
-}
+ 	p.short-desc {
+ 		color: @txtLightViolet;
+ 		margin-bottom: 1em;
+ 	}
+ 	article.bloc {
+ 		h2 {
+ 			color: @txtLightViolet;
+ 			font-size: 1.5em;
+ 			font-weight: 900;
+ 			line-height: 2.3;
+ 		}
+ 		.box {
+ 			background-color:  rgba(77, 63, 75, 0.8);
+ 		}
+ 		&:hover {
+ 			.svg path {
+ 				fill: @txtLightRed;
+ 				stroke: @txtLightRed;
+ 			}
+ 		}
+
+ 		.social-links {
+ 			> div {
+ 				margin: 0 .6em .9em;
+ 				display: inline-block;
+ 				width: 31px;
+ 				height: 31px;
+ 				background: @bgRegularViolet;
+ 				.border-radiuses(50%, 50%, 50%, 50%);
+ 			}
+ 		}
+ 	}
+
+ 	div.meet-the-team {
+ 		position: relative;
+ 		width: 275px;
+ 		margin: 3em auto;
+ 		background: @bgDarkGreen;
+
+ 		text-align: center;
+ 		text-transform: uppercase;
+ 		font-size: 1.5em;
+ 		font-weight: 900;
+ 		line-height: 2.32;
+ 		.border-radiuses(5px, 5px, 5px, 5px);
+ 		&:after {
+ 			top: 100%;
+ 			left: 50%;
+ 			border: solid transparent;
+ 			content: " ";
+ 			height: 0;
+ 			width: 0;
+ 			position: absolute;
+ 			pointer-events: none;
+ 			border-top-color: @bgDarkGreen;
+ 			border-width: 15px;
+ 			margin-left: -15px;
+ 		}
+ 	}
+
+
+ }
