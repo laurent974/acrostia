@@ -2,8 +2,31 @@
  /* = Contact module                                         = */
  /* ========================================================== */
 
-#contacts {
-	.bg {
-		background: url("../img/bg_contacts.png");
-	}
-}
+ #contacts {
+ 	.bg {
+ 		background: url("../img/bg_contacts.png");
+ 	}
+ 	header nav ul li.active {
+ 		background-color: @bgLightBlue;
+ 	}
+ 	h3 {
+ 		font-size: 1.8em;
+ 		font-weight: 300;
+ 	}
+
+ 	.address, .form {
+ 		.column(6);
+ 	}
+ 	.address {
+
+ 	}
+ 	.form {
+ 		input[type=text] {
+ 			.column(6);
+ 		}
+ 		input[type=submit] {
+ 			display: block;
+ 			margin: 0 auto;
+ 		}
+ 	}
+ }

@@ -794,7 +794,7 @@ header a.logo {
   font-family: "Damion", "Helvetica Neue", Arial, Helvetica, Sans-Serif;
   font-weight: 400;
   font-size: 3.13em;
-  line-height: 1.2;
+  line-height: 1.6;
   padding: 0;
 }
 header nav {
@@ -1119,5 +1119,39 @@ header nav ul li a {
 /* ========================================================== */
 #contacts .bg {
   background: url("../img/bg_contacts.png");
+}
+#contacts header nav ul li.active {
+  background-color: #74c7d5;
+}
+#contacts h3 {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+#contacts .address,
+#contacts .form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  *width: 45.45454545%;
+  *padding: 0 9.95454545px;
+}
+#contacts .form input[type=text] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  *width: 45.45454545%;
+  *padding: 0 9.95454545px;
+}
+#contacts .form input[type=submit] {
+  display: block;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
