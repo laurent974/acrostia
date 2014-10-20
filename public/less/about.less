@@ -14,19 +14,55 @@
  		margin-bottom: 1em;
  	}
  	article.bloc {
+ 		cursor: pointer;
  		h2 {
  			color: @txtLightViolet;
  			font-size: 1.5em;
  			font-weight: 900;
- 			line-height: 2.3;
+ 			line-height: 1;
+ 			margin: 0;
  		}
  		.box {
  			background-color:  rgba(77, 63, 75, 0.8);
  		}
+ 		p.job {
+ 			font-size: .8em;
+ 			font-weight: 300;
+ 			color: @txtGreenRegular;
+ 			margin-bottom: 3em;
+ 		}
+ 		.svg {
+ 			margin-bottom: 1em;
+ 		}
  		&:hover {
- 			.svg path {
- 				fill: @txtLightRed;
- 				stroke: @txtLightRed;
+ 			.svg {
+ 				path {
+	 				fill: @txtLightRed;
+	 				
+	 			}
+	 			use[clip-path="url(#clip0)"] {
+	 				stroke: @txtLightRed;
+	 			}
+ 			}
+ 			h2 {
+ 				color: @txtWhite;
+ 			}
+ 			.social-links {
+ 				.facebook {
+ 					background: @bgFacebookBlue;
+ 				}
+ 				.twitter {
+ 					background: @bgLightBlue;
+ 				}
+ 				.google-plus {
+ 					background: @bgLightRed;
+ 				}
+ 				.linked-in {
+ 					background: @bgLinkedInBlue;
+ 				}
+ 			}
+ 			p.job {
+ 				color: @txtOrange;
  			}
  		}
 
@@ -38,6 +74,12 @@
  				height: 31px;
  				background: @bgRegularViolet;
  				.border-radiuses(50%, 50%, 50%, 50%);
+ 				img {
+ 					vertical-align: middle;
+ 				}
+ 				&.google-plus img {
+ 					vertical-align: bottom;
+ 				}
  			}
  		}
  	}

@@ -995,18 +995,51 @@ header nav ul li a {
   color: #c7b6c5;
   margin-bottom: 1em;
 }
+#about article.bloc {
+  cursor: pointer;
+}
 #about article.bloc h2 {
   color: #c7b6c5;
   font-size: 1.5em;
   font-weight: 900;
-  line-height: 2.3;
+  line-height: 1;
+  margin: 0;
 }
 #about article.bloc .box {
   background-color: rgba(77, 63, 75, 0.8);
 }
+#about article.bloc p.job {
+  font-size: .8em;
+  font-weight: 300;
+  color: #a1ca6c;
+  margin-bottom: 3em;
+}
+#about article.bloc .svg {
+  margin-bottom: 1em;
+}
 #about article.bloc:hover .svg path {
   fill: #df5c64;
+}
+#about article.bloc:hover .svg use[clip-path="url(#clip0)"] {
   stroke: #df5c64;
+}
+#about article.bloc:hover h2 {
+  color: #ffffff;
+}
+#about article.bloc:hover .social-links .facebook {
+  background: #4f689e;
+}
+#about article.bloc:hover .social-links .twitter {
+  background: #74c7d5;
+}
+#about article.bloc:hover .social-links .google-plus {
+  background: #df5c64;
+}
+#about article.bloc:hover .social-links .linked-in {
+  background: #3e61af;
+}
+#about article.bloc:hover p.job {
+  color: #ff8973;
 }
 #about article.bloc .social-links > div {
   margin: 0 .6em .9em;
@@ -1029,6 +1062,12 @@ header nav ul li a {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+#about article.bloc .social-links > div img {
+  vertical-align: middle;
+}
+#about article.bloc .social-links > div.google-plus img {
+  vertical-align: bottom;
 }
 #about div.meet-the-team {
   position: relative;
