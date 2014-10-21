@@ -47,7 +47,8 @@ $(document).ready(function() {
      /* ========================================================== */
      /* = scrollTo                                               = */
      /* ========================================================== */
-     $("nav a").on("click", function(e) {
+     $("nav a").on("click", function(e
+        ) {
         e.preventDefault();
         $("body").scrollTo($(this).attr("href"), 1000);
      });

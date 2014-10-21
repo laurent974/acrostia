@@ -368,7 +368,7 @@ table {
 /* = Set up baseline                                        = */
 /* ========================================================== */
 html {
-  font-size: 100.01%;
+  font-size: 16px;
 }
 body {
   position: relative;
@@ -412,7 +412,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #74c7d5;
+  color: #c0dfda;
 }
 h1,
 h2,
@@ -1139,7 +1139,53 @@ header nav ul li a {
   *width: 45.45454545%;
   *padding: 0 9.95454545px;
 }
-#contacts .form input[type=text] {
+#contacts address {
+  font-style: normal;
+  font-size: .8em;
+  line-height: 1.4;
+  margin-bottom: 2em;
+}
+#contacts address span.society {
+  display: block;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: .8;
+  color: #c0dfda;
+  margin-bottom: 1.2em;
+}
+#contacts p.coord {
+  font-size: .8em;
+  margin: 0;
+  line-height: 1.2;
+}
+#contacts p.coord span.type {
+  display: inline-block;
+  width: 5em;
+  color: #c0dfda;
+}
+#contacts p.coord [href^=tel],
+#contacts p.coord [href^=callto] {
+  text-decoration: none;
+}
+#contacts .form {
+  *zoom: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+#contacts .form:before,
+#contacts .form:after {
+  content: "";
+  display: table;
+}
+#contacts .form:after {
+  clear: both;
+}
+#contacts .form div.input-wrap {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1149,9 +1195,72 @@ header nav ul li a {
   padding: 0 10px;
   *width: 45.45454545%;
   *padding: 0 9.95454545px;
+  margin-bottom: .8em;
+  padding: 0 10px 0 0;
+}
+#contacts .form div.input-wrap.padding-right-null {
+  padding: 0 0 0 10px;
+}
+#contacts .form input[type=text],
+#contacts .form textarea {
+  font-size: .8em;
+  border: 0;
+  background: #68a097;
+  color: #82c7bc;
+  padding: 3.3% 5.5%;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#contacts .form input[type=text]::-webkit-input-placeholder,
+#contacts .form textarea::-webkit-input-placeholder {
+  color: #82c7bc;
+}
+#contacts .form input[type=text]:focus,
+#contacts .form textarea:focus {
+  background-color: #ffffff;
+  color: #68a097;
+}
+#contacts .form textarea {
+  height: 110px;
+  padding: 1em 1.5em;
 }
 #contacts .form input[type=submit] {
   display: block;
-  margin: 0 auto;
+  margin: 1em auto 0;
+  font-size: 1.33em;
+  font-weight: 900;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #df5c64;
+  color: #ffffff;
+  border: 0;
+  border-bottom: 3px solid #b24a50;
+  padding: .33em 3.5em;
 }
 /*# sourceMappingURL=main.css.map */

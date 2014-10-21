@@ -29,8 +29,10 @@ include _header
 		.form
 			h3 Ask a question
 			form#contact-form
-				input(type="text", placeholder="Name")
-				input(type="text", placeholder="Surname")
+				.input-wrap
+					input(type="text", placeholder="Name")
+				.input-wrap.padding-right-null
+					input(type="text", placeholder="Surname")
 				textarea(placeholder="Your question")
 				input(type="submit", value="SEND")
 

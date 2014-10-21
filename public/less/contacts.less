@@ -17,16 +17,75 @@
  	.address, .form {
  		.column(6);
  	}
- 	.address {
-
+ 	address {
+ 		font-style: normal;
+ 		font-size: .8em;
+ 		line-height: 1.4;
+ 		margin-bottom: 2em;
+ 		span.society {
+ 			display: block;
+ 			font-size: 1.25em;
+ 			font-weight: 700;
+ 			line-height: .8;
+ 			color: @txtLightBlue;
+ 			margin-bottom: 1.2em;
+ 		}
+ 	}
+ 	p.coord {
+ 		font-size: .8em;
+ 		margin: 0;
+ 		line-height: 1.2;
+ 		span.type {
+ 			display: inline-block;
+			width: 5em;
+			color: @txtLightBlue;
+ 		}
+ 		[href^=tel],[href^=callto] {
+ 			text-decoration: none;
+ 		}
  	}
  	.form {
- 		input[type=text] {
+ 		.row;
+ 		div.input-wrap {
  			.column(6);
+ 			margin-bottom: .8em;
+ 			padding: 0 10px 0 0;
+ 			&.padding-right-null {
+ 				padding: 0 0 0 10px;
+ 			}
+ 		}
+ 		input[type=text],textarea {
+ 			font-size: .8em;
+ 			border: 0;
+ 			background: @bgDarkBlue;
+ 			color: @txtLightBlueGren;
+ 			padding: 3.3% 5.5%;
+ 			.border-radiuses(4px, 4px, 4px, 4px);
+
+ 			&::-webkit-input-placeholder {
+ 				color: @txtLightBlueGren;
+ 			}
+ 			&:focus {
+ 				background-color: @bgWhite;
+ 				color: @bgDarkBlue;
+
+ 			}
+ 		}
+ 		textarea {
+ 			height: 110px;
+ 			padding: 1em 1.5em;
  		}
  		input[type=submit] {
  			display: block;
- 			margin: 0 auto;
+ 			margin: 1em auto 0;
+ 			font-size: 1.33em;
+ 			font-weight: 900;
+ 			.border-radiuses(4px, 4px, 4px, 4px);
+ 			background-color: @bgLightRed;
+ 			color: @txtWhite;
+ 			border:0;
+ 			border-bottom: 3px solid @bgDarkRed;
+ 			padding: .33em 3.5em;
  		}
  	}
  }
