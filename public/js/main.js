@@ -43,4 +43,12 @@ $(document).ready(function() {
 		slideSpeed : 300,
 		paginationSpeed : 400
 	});
+
+     /* ========================================================== */
+     /* = scrollTo                                               = */
+     /* ========================================================== */
+     $("nav a").on("click", function(e) {
+        e.preventDefault();
+        $("body").scrollTo($(this).attr("href"), 1000);
+     });
  });
