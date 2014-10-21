@@ -52,4 +52,9 @@ $(document).ready(function() {
         e.preventDefault();
         $("body").scrollTo($(this).attr("href"), 1000);
      });
+
+     /* ========================================================== */
+     /* = scrollReveal                                           = */
+     /* ========================================================== */
+     window.sr = new scrollReveal();
  });
