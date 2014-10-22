@@ -1,27 +1,11 @@
 mixin header(activePage)
 	header
-		a.logo acrostia
+		a.logo(data-sr="enter from the top and hustle 50px over 1.5s") acrostia
 		nav
 			ul
-				li(class=(activePage === 'home' ? 'active' : '')): a(href="#home") Home
-				li(class=(activePage === 'services' ? 'active' : '')): a(href="#services") Services
-				li(class=(activePage === 'about' ? 'active' : '')): a(href="#about") About
-				li(class=(activePage === 'work' ? 'active' : '')): a(href="#work") Work
-				li(class=(activePage === 'contacts' ? 'active' : '')): a(href="#contacts") Contacts
+				li(data-sr="enter from the top and hustle 50px over .4s", class=(activePage === 'home' ? 'active' : '')): a(href="#home") Home
+				li(data-sr="enter from the top and hustle 50px over .6s", class=(activePage === 'services' ? 'active' : '')): a(href="#services") Services
+				li(data-sr="enter from the top and hustle 50px over .8s", class=(activePage === 'about' ? 'active' : '')): a(href="#about") About
+				li(data-sr="enter from the top and hustle 50px over 1s", class=(activePage === 'work' ? 'active' : '')): a(href="#work") Work
+				li(data-sr="enter from the top and hustle 50px over 1.2s", class=(activePage === 'contacts' ? 'active' : '')): a(href="#contacts") Contacts
 	section
-		#carousel.owl-carousel
-			.slide-one
-				p.ideas
-					span.good-ideas Good ideas
-					span.comes comes
-				p.first first!
-			.slide-two
-				p.ideas
-					span.good-ideas Good ideas
-					span.comes comes
-				p.first first!
-			.slide-three
-				p.ideas
-					span.good-ideas Good ideas
-					span.comes comes
-				p.first first!

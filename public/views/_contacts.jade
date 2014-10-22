@@ -3,30 +3,30 @@ include _header
 	.bg
 	.global
 		+header('contacts')
-		h1 Contact us
-		p.short-desc Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
+		h1(data-sr="enter from the top and hustle 50px over 1s") Contact us
+		p.short-desc(data-sr="enter from the bottom and hustle 20px over 0.5s wait .5s") Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
 
-		.address
+		.address(data-sr="enter from the top and hustle 50px over 0.5s wait 1s")
 			h3 Address
 			address
 				span.society Acrostia
 				| Sevenoaks Rd
 				br
 				| Sevenoaks TN14 7HR, UK
-			p.coord(data-sr="wait 0.2s then scale up 30% reset")
+			p.coord
 				span.type Phone:
 				a(href="tel:+44555555555") +44 555 555 555
-			p.coord(data-sr="wait 0.4s then scale up 25% reset")
+			p.coord
 				span.type Fax:
 				a(href="tel:+44555555555") +44 555 555 555
-			p.coord(data-sr="wait 0.6s then scale up 20% reset")
+			p.coord
 				span.type E-mail:
 				a(href="mailto:info@acrostia.com") info@acrostia.com
-			p.coord(data-sr="wait 0.8s then scale up 15% reset")
+			p.coord
 				span.type Skype:
 				a(href="callto:+44555555555") AcOstia  
 
-		.form
+		.form(data-sr="enter from the top and hustle 50px over 0.5s wait 1s")
 			h3 Ask a question
 			form#contact-form
 				.input-wrap
